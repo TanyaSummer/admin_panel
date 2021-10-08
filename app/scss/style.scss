@@ -1,6 +1,120 @@
-@import 'vars'; /*сюда писать переменные для цвета, для шрифта и т.д. и кусочки кода*/
+@import 'vars'; 
 @import 'fonts';
-@import 'reset';/*сюда пишу reset.css*/
-@import 'global';/*что я пишу для body, для ссылок и т.д*/
-@import 'media'; /*медиазапросы*/
+@import 'reset';
+@import 'global';
+@import 'media'; 
+
+
+.admin-panel{
+  display: grid;
+  grid-template-columns: 298px 1142px;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #300B31;
+  &__title{
+    @extend %nunitoSansBold-700;
+    font-size: 18px;
+    margin-top: 51px;
+    margin-bottom: 29px;
+    padding-left: 66px;
+  }
+  &__text{
+    @extend %nunitoSansRegular-400;
+    font-size: 16px;
+  }
+  .menu-top,
+  .menu-bottom{
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-top{
+    margin-bottom: 59px;
+  }
+  .menu-bottom{
+    position: relative;
+    &::before{
+      content: '';
+      width: 200px;
+      height: 1px;
+      background-color: $line;
+      position: absolute;
+      bottom: 270px;
+      left: 66px;
+    }
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 14px 66px;
+    cursor: pointer;
+    svg{
+      margin-right: 19px;
+    }
+  }
+  &__btn--active,
+  &__btn:hover{
+    background-color: $default;
+    color: #fff;
+    svg{
+      path{
+        fill:#fff;
+      }
+    }
+  }
+  .release {
+    flex-grow: 1;
+    display: inline-flex;
+    align-items: flex-end;
+    margin-left: 66px;
+    
+ }
+}
+.content{
+  background: linear-gradient(44.83deg, #300B31 0.7%, #DF5979 100.4%);
+  &__inner{
+    padding: 0 65px;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 38px 44px;
+    color: #fff;
+  }
+  &__box{
+    
+  }
+  &__box-title{
+    @extend %nunitoSansBold-700;
+    font-size: 35px;
+    line-height: 47.74px;
+  }
+  &__box-text{
+    @extend %nunitoSansLight-300;
+    line-height: 21.82px;
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+  }
+  &__user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__user-name{
+    @extend %nunitoSansBold-700;
+    font-size: 18px;
+    line-height: 24.55px;
+  }
+  &__user-country{
+    font-size: 16px;
+    line-height: 19.1px;
+  }
+}
 

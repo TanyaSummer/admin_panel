@@ -1,8 +1,24 @@
-/************reset***************/
 
 
 
-
+html,
 body{
+  height: 100%;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @extend %nunitoSansRegular-400;
+  color: #1A181A;
+}
 
+main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  // padding: 0 15px;
 }

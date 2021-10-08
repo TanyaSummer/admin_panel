@@ -1,0 +1,41 @@
+// Nunito Sans Black 900
+// Nunito Sans Bold 700
+// Nunito Sans Regular 400
+// Nunito Sans Lite 300
+
+@font-face{
+  font-family: 'NunitoSans-Black', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  src: local('NunitoSans-Black'),
+    url('../fonts/NunitoSans-Black.woff2') format('woff2'),
+    url('../fonts/NunitoSans-Black.woff');
+  font-display:swap;
+}
+@font-face{
+  font-family: 'NunitoSans-Bold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('NunitoSans-Bold'),
+    url('../fonts/NunitoSans-Bold.woff2') format('woff2'),
+    url('../fonts/NunitoSans-Bold.woff');
+  font-display:swap;
+}
+@font-face{
+  font-family: 'NunitoSans-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local('NunitoSans-Regular'),
+    url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
+    url('../fonts/NunitoSans-Regular.woff');
+  font-display:swap;
+}
+@font-face{
+  font-family: 'NunitoSans-Light', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  src: local('NunitoSans-Light'),
+    url('../fonts/NunitoSans-Light.woff2') format('woff2'),
+    url('../fonts/NunitoSans-Light.woff');
+  font-display:swap;
+}
