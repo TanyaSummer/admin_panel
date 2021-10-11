@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -113,7 +114,7 @@
         </aside>
         <section class="content">
           <div class="content__inner">
-            <div class="content__header">
+            <article class="content__header">
               <div class="content__box">
                 <h1 class="content__box-title">
                   Dashboard
@@ -123,23 +124,200 @@
                 </div>
               </div>
               <div class="content__user">
-                <img class="content__user-img" src="images/user/1.png" alt="user">
+                <a class="content__user-image" href="#">
+                  <img class="content__user-img" src="images/user/1.png" alt="user">
+                </a>
                 <div class="content__user-info">
-                  <span class="content__user-name">
+                  <a class="content__user-name" href="#">
                     Farabi
-                  </span>
-                  <span class="content__user-country">
+                  </a>
+                  <a class="content__user-country" href="#">
                     Indonesia
-                  </span>
+                  </a>
                 </div>
               </div>
-            </div>
+            </article>
+            <article class="rate">
+              <div class="rate__item">
+                <div class="rate__item-box">
+                  <div class="rate__item-top">
+                      <img class="rate__item-top__img" src="images/icon/rate1.svg" alt="rate-arrow" >
+                      <span class="rate__item-top__num">
+                        5.6K
+                      </span>
+                      <span class="rate__item-top__text">
+                        Response
+                      </span>
+                  </div>
+                  <div class="rate__item-buttom">
+                    <img class="rate__item-buttom__img" src="images/icon/flag.svg" alt="rate-flag">
+                    <div class="rate__item-buttom__text">
+                      Many responses have not received a response
+                    </div>
+                  </div>
+                </div>
+                <div class="rate__item-box">
+                  <div class="rate__item-top">
+                      <img class="rate__item-top__img" src="images/icon/rate1.svg" alt="rate-arrow" >
+                      <span class="rate__item-top__num">
+                        5.6K
+                      </span>
+                      <span class="rate__item-top__text">
+                        Response
+                      </span>
+                  </div>
+                  <div class="rate__item-buttom">
+                    <img class="rate__item-buttom__img" src="images/icon/flag.svg" alt="rate-flag">
+                    <div class="rate__item-buttom__text">
+                      Many responses have not received a response
+                    </div>
+                  </div>
+                </div>
+                <div class="rate__item-box">
+                  <div class="rate__item-top">
+                      <img class="rate__item-top__img" src="images/icon/rate2.svg" alt="rate-arrow" >
+                      <span class="rate__item-top__num">
+                        101,5 %
+                      </span>
+                      <span class="rate__item-top__text">
+                        Statistics
+                      </span>
+                  </div>
+                  <div class="rate__item-buttom">
+                    <img class="rate__item-buttom__img" src="images/icon/flag.svg" alt="rate-flag">
+                    <div class="rate__item-buttom__text">
+                      Each less stable website activity
+                    </div>
+                  </div>
+                </div>
+                <div class="rate__item-box">
+                  <div class="rate__item-top">
+                      <img class="rate__item-top__img" src="images/icon/rate3.svg" alt="rate-arrow" >
+                      <span class="rate__item-top__num">
+                        7.150 K
+                      </span>
+                      <span class="rate__item-top__text">
+                        Visitors
+                      </span>
+                  </div>
+                  <div class="rate__item-buttom">
+                    <img class="rate__item-buttom__img" src="images/icon/flag.svg" alt="rate-flag">
+                    <div class="rate__item-buttom__text">
+                      Visitors of the monthstill less than the target
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="bottom-group">
+              <article class="news">
+                <h4 class="news__title">
+                  Latest news
+                </h4>
+                <ul class="news__items">
+                  <li class="news__item">
+                    <img class="news__img" src="images/news/1.png" alt="news">
+                    <div class="news__content">
+                      <a class="news__content-title" href="#" >
+                        Survey: Bidding Wars Aren’t the Big Problem Anymore
+                      </a>
+                      <p class="news__content-box">
+                        <span class="news__content-box__date">
+                          22 May 2019
+                        </span>
+                        <span class="news__content-box__time">
+                          Read 56 Times
+                        </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="news__item">
+                    <img class="news__img" src="images/news/2.png" alt="news">
+                    <div class="news__content">
+                      <a class="news__content-title"  href="#">
+                        At-Home Learning Spaces Remain Selling Point, Pros Say
+                      </a>
+                      <p class="news__content-box">
+                        <span class="news__content-box__date">
+                          22 May 2019
+                        </span>
+                        <span class="news__content-box__time">
+                          Read 56 Times
+                        </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="news__item">
+                    <img class="news__img" src="images/news/1.png" alt="news">
+                    <div class="news__content">
+                      <a class="news__content-title"  href="#">
+                        Survey: Bidding Wars Aren’t the Big Problem Anymore
+                      </a>
+                      <p class="news__content-box">
+                        <span class="news__content-box__date">
+                          22 May 2019
+                        </span>
+                        <span class="news__content-box__time">
+                          Read 56 Times
+                        </span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <article class="statistic">
+                <div class="statistic__title">
+                  Statistics Website
+                </div>
+                <ul class="statistic__items">
+
+                  <li class="statistic__item">
+                    <div class="chart-skills">
+                      <span class="line"></span>
+                    </div>
+                    <span class="chart-skills__text">
+                      Today's Visitors
+                    </span>
+                  </li>
+                  
+                  <li class="statistic__item">
+                    <div class="chart-skills">
+                      <span class="line"></span>
+                    </div>
+                    <span class="chart-skills__text">
+                      Total Visitors
+                    </span>
+                  </li>
+
+                  <li class="statistic__item">
+                    <div class="chart-skills">
+                      <span class="line"></span>
+                    </div>
+                    <span class="chart-skills__text">
+                      Today's Hits
+                    </span>
+                  </li>
+
+                  <li class="statistic__item">
+                    <div class="chart-skills">
+                      <span class="line"></span>
+                    </div>
+                    <span class="chart-skills__text">
+                      Total Hits
+                    </span>
+                  </li>
+                </ul>
+                </article>
+                </div>
+            </article>
+            
           </div>
         </section>
       </div>
     </div>
   </main>
 
+  
   <script src="js/main.min.js"></script>
 </body>
 </html>
